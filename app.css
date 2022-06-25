@@ -34,7 +34,7 @@ body {
     margin:10px;
     border-color:black;
 }
-.expression:hover{
+button:hover{
     background-color:black;
     color:white;
 }
