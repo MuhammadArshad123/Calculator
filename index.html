@@ -5,43 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="app.css" />
+    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <section class="calculator">
-        <div class="screen">123</div>
-        <div class="delclear">
-          <button class="clear">CLEAR</button>
-          <button class="delete">DELETE</button>
-        </div>
-        <div class="characters">
-          <div class="row">
-            <button class="expression">7</button>
-            <button class="expression">8</button>
-            <button class="expression">9</button>
-            <button class="expression">÷</button>
-          </div>
-          <div class="row">
-            <button class="expression">4</button>
-            <button class="expression">5</button>
-            <button class="expression">6</button>
-            <button class="expression">×</button>
-          </div>
-          <div class="row">
-            <button class="expression">1</button>
-            <button class="expression">2</button>
-            <button class="expression">3</button>
-            <button class="expression">-</button>
-          </div>
-          <div class="row">
-            <button class="expression">.</button>
-            <button class="expression">0</button>
-            <button class="expression">=</button>
-            <button class="expression">+</button>
-          </div>
-        </div>
-      </section>
+    <div class="calculator-grid">
+      <div class="output">
+        <div class="previous-operand"></div>
+        <div class="current-operand">123</div>
+      </div>
+      <button class="AC">AC</button>
+      <button class="DEL">DEL</button>
+      <button class="Operation">÷</button>
+      <button class="Number">1</button>
+      <button class="Number">2</button>
+      <button class="Number">3</button>
+      <button class="Operation">*</button>
+      <button class="Number">4</button>
+      <button class="Number">5</button>
+      <button class="Number">6</button>
+      <button class="Operation">+</button>
+      <button class="Number">7</button>
+      <button class="Number">8</button>
+      <button class="Number">9</button>
+      <button class="Operation">-</button>
+      <button class="Number">.</button>
+      <button class="Number">0</button>
+      <button class="Operation">=</button>
     </div>
   </body>
 </html>
