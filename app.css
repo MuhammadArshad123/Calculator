@@ -9,13 +9,16 @@
 }
 .container{
     margin: 0 auto;
-    max-width:640px;
-    padding:20px;
+    padding:10px;
+    max-width:80%;
+    max-height:50%;
     background-color:darkgray;
 }
 
 .calculator-grid{
     display:grid;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(6, 1fr);
 }
@@ -23,7 +26,7 @@
 .calculator-grid > button {
     background-color:white;
     border:1px solid black;
-    font-size:1.5em;
+    font-size:1.5rem;
     font-weight:bold;
     width:100%;
     height:100%;
@@ -46,6 +49,7 @@
     background-color:black;
     grid-column: span 4;
     display:flex;
+    min-height: 7.5rem;
     flex-direction: column;
     align-items: flex-end;
     padding:10px;
@@ -56,7 +60,7 @@
 
 
 .output .previous-operand{
-    font-size:1.5em;
+    font-size:1.5rem;
     color:lightgray;
     font-weight:bold;
     margin-bottom:10px;
@@ -64,7 +68,7 @@
 
 .output .current-operand{
     color:white;
-    font-size:2em;
+    font-size:2rem;
     font-weight:bold;
     margin-bottom:10px;
 }
