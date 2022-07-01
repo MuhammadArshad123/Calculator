@@ -8,16 +8,19 @@ class Calculator {
     updateDisplay(){
         this.currentOperandDisplay.innerText = this.currentOperand;
         this.previousOperandDisplay.innerText = this.previousOperand;
+        if(this.operation != null){
+            this.previousOperandDisplay.innerText = `${this.previousOperand} ${this.operation}`;
+        }
     }
 
     clear(){
-        this.currentOperand='';
+        this.currentOperand=''; 
         this.previousOperand='';
-        this.operation = undefined;
+        this.operation = undefined; 
     }
 
     delete(){
-        this.currentOperand = this.currentOperand.toString().slice(0, -1);
+        this.currentOperand = this.currentOperand.toString().slice(0, -1); //slice(0, -1) removes last character
     }
 
     addNumber(number){
@@ -99,5 +102,10 @@ operationButtons.forEach(button => {   //for each operation button
 
 equalButton.addEventListener('click', () => {
     calculator.calculate();
+    calculator.updateDisplay();
+});
+
+deleteButton.addEventListener('click', () => {
+    calculator.delete();
     calculator.updateDisplay();
 });
